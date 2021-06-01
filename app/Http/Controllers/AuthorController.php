@@ -15,11 +15,6 @@ class AuthorController extends Controller
     {
         $this->request = $request;
     }
-    public function getUsers()
-    {
-        $authors = Author::all();
-        return $this->response($authors, 200);
-    }
 
     /**
      * Return the list of users
